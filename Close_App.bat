@@ -4,4 +4,5 @@
 @echo off
 echo %DATE% %TIME% >> C:\CMD_Scripts\task_log.txt
 taskkill /F /T /IM app.exe >> C:\CMD_Scripts\task_log.txt 2>&1
+timeout /t 2 >nul
 exit
